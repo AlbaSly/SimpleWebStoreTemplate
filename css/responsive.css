@@ -1,0 +1,28 @@
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .vis--nodetshirt {
+        grid-row: 5 / 6;
+        grid-column: 2 / 4;
+    }
+
+    .us {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5rem;
+    }
+
+    .us__photo {
+        grid-column: 2 / 3;
+    }
+
+    .us__info {
+        margin-top: 0;
+    }
+
+    .reasons {
+        display: flex;
+        flex-direction: row;
+    }
+}
