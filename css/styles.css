@@ -1,0 +1,122 @@
+:root {
+    --yellow: #FCDE67;
+    --yellow-mono: #FBD335;
+    --neon-blue: #5BCCF6;
+    --neon-blue-mono: #2BBDF3;
+    --orange-carrot: #F6855B;
+    --black: #030E12;
+
+    --cabin: 'Cabin', sans-serif; /** reg400, reg400ital, semibold600, semibold600ital **/
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--cabin);
+    background-color: var(--yellow);
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 140rem;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: var(--orange-carrot);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    margin: 2rem 0;
+    width: 8rem;
+    height: 8rem;
+}
+
+.footer {
+    background-color: var(--yellow-mono);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer_text {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.nav {
+    background-color: var(--neon-blue);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav__link {
+    font-family: var(--cabin);
+    color: white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.nav__link--active, .nav__link:hover {
+    color: var(--orange-carrot);
+}
+
+.product {
+
+}
+
+.product__image {
+
+}
+
+.product__info {
+
+}
+
+.product_name {
+
+}
+
+.product__prize {
+    
+}
