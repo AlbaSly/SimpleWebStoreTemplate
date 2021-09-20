@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FrontEnd Store</title>
+    <title>FrontStore</title>
+    <link rel="icon" href="img/logo.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +36,7 @@
         <h1 id="product-name">Tech</h1>
 
         <div class="shirt">
-            <img id="product-photo" class="shirt__photo" src="img/3.jpg" alt="Tech Shirt">
+            <img id="product-photo" class="shirt__photo" src="" alt="Tech Shirt">
             <div class="shirt__info">
                 <p class="shirt__text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos placeat doloremque corrupti debitis consequuntur, tenetur dolorum odio impedit laborum deleniti natus sapiente beatae molestias esse voluptate quibusdam eos. Laboriosam, ab.
@@ -49,8 +50,9 @@
                         <option value="">L</option>
                         <option value="">XL</option>
                     </select>
-                    <input class="form__fields" type="number" min="1" placeholder="Amount" required>
-                    <input class="form__submit" type="submit" value="Add to cart">
+                    <input id="amount" class="form__fields" type="number" min="1" placeholder="Amount" required onkeyup="setTotal()" oninput="validity.valid||(value='');" value="1">
+                    <p id="total">$0.00</p>
+                    <input class="form__submit" type="button" value="BUY" onclick="showDetailedMessage()">
                 </form>
             </div>
         </div>
