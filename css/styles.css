@@ -13,6 +13,8 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+
+    scroll-snap-type: y proximity;
 }
 
 *,*:before, *:after {
@@ -105,7 +107,7 @@ h3 {
 
 /** NAVIGATION **/
 .nav {
-    background-color: var(--neon-blue);
+    background-color: var(--neon-blue-mono);
     padding: 2rem 0;
     display: flex;
     justify-content: center;
@@ -267,7 +269,6 @@ h3 {
 }
 
 /** PRODUCT SECTION -> FORM AREA **/
-
 .form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -282,6 +283,13 @@ h3 {
     font-size: 2rem;
     padding: 1rem;
     appearance: none;
+}
+
+#total {
+    font-size: 4rem;
+    grid-column: 1 / 3;
+    display: block;
+    margin: auto auto;
 }
 
 .form__submit {
