@@ -1,13 +1,16 @@
 @media (min-width: 768px) {
+    /** MAIN->PRODUCTS GRID**/
     .grid {
         grid-template-columns: repeat(3, 1fr);
     }
     
+    /** SHIRT VISUALIZATION **/
     .vis--nodetshirt {
         grid-row: 5 / 6;
         grid-column: 2 / 4;
     }
 
+    /** ABOUT US SECTION **/
     .us {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 1.5rem;
@@ -26,6 +29,7 @@
         flex-direction: row;
     }
 
+    /** PRODUCT SECTION -> SHIRT**/
     .shirt {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -33,6 +37,7 @@
         margin: 0 10rem;
     }
 
+    /** PRODUCT SECTION -> FORM AREA **/
     .form__submit {
         display: block;
         margin: 0 auto;
@@ -41,6 +46,7 @@
 }
 
 @media (min-width: 1080px) {
+    /** GLOBAL CONTAINER **/
     .container {
         max-width: 140rem;
     }
