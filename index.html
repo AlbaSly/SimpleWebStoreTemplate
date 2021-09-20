@@ -14,161 +14,162 @@
     <link rel="preload" href="css/responsive.css" as="style">
     <link rel="preload" href="css/normalize.css" as="style">
     
+    <script type="text/javascript" src="js/script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
     <header class="header">
-        <a href="">
+        <a href="index.html">
             <img class="header__logo" src="img/logo.png" alt="Logo">
         </a>
     </header>
 
-    <nav class="nav">
+    <nav id="index__nav" class="nav">
         <a class="nav__link nav__link--active" href="" >Store</a>
-        <a class="nav__link nav__link--" href="about_us.html" >About Us</a>
+        <a class="nav__link" href="about_us.html" >About Us</a>
     </nav>
 
-    <main class="container">
+    <main id="main" class="container" >
         <h1>Our Products</h1>
     
         <div class="grid">
             <div class="product">
-                <a href="product.html">
+                <a id="1" href="product.html" onclick="setProductInfo(this.id)">
                     <img class="product__image" src="img/1.jpg" alt="Developer Shirt">
                     <div class="product__info">
-                        <p class="product__name">VueJS</p>
+                        <p id="pn1" class="product__name">VueJS</p>
                         <p class="product__prize">$25</p>
                     </div>
                 </a>
             </div> <!-- .product -->
 
             <div class="product">
-                <a href="product.html">
+                <a id="2" href="product.html" onclick="setProductInfo(this.id)">
                     <img class="product__image" src="img/2.jpg" alt="Developer Shirt">
                     <div class="product__info">
-                        <p class="product__name">Angular</p>
+                        <p id="pn2" class="product__name">AngularJS</p>
                         <p class="product__prize">$28</p>
                     </div>
                 </a>
             </div> <!-- .product -->
 
             <div class="product">
-                <a href="product.html">
+                <a id="3" href="product.html" onclick="setProductInfo(this.id)">
                     <img class="product__image" src="img/3.jpg" alt="Developer Shirt">
                     <div class="product__info">
-                        <p class="product__name">React</p>
+                        <p id="pn3" class="product__name">React</p>
                         <p class="product__prize">$30</p>
                     </div>
                 </a>
             </div> <!-- .product -->
 
             <div class="product">
-                <a href="product.html">
+                <a id="4" href="product.html" onclick="setProductInfo(this.id)">
                     <img class="product__image" src="img/4.jpg" alt="Developer Shirt">
                     <div class="product__info">
-                        <p class="product__name">Redux</p>
+                        <p id="pn4" class="product__name">Redux</p>
                         <p class="product__prize">$15.50</p>
                     </div>
                 </a>
             </div> <!-- .product -->
 
             <div class="product">
-                <a href="product.html">
+                <a id="5" href="product.html" onclick="setProductInfo(this.id)">
                     <img class="product__image" src="img/5.jpg" alt="Developer Shirt">
                     <div class="product__info">
-                        <p class="product__name">NodeJS</p>
+                        <p id="pn5" class="product__name">NodeJS</p>
                         <p class="product__prize">$25</p>
                     </div>
                 </a>
             </div> <!-- .product -->
 
             <div class="product">
-                <a href="product.html">
+                <a id="6" href="product.html" onclick="setProductInfo(this.id)">
                     <img class="product__image" src="img/6.jpg" alt="Developer Shirt">
                     <div class="product__info">
-                        <p class="product__name">SASS</p>
+                        <p id="pn6" class="product__name">SASS</p>
                         <p class="product__prize">$25</p>
                     </div>
                 </a>
             </div> <!-- .product -->
 
             <div class="product">
-                <a href="product.html">
+                <a id="7" href="product.html" onclick="setProductInfo(this.id)">
                     <img class="product__image" src="img/7.jpg" alt="Developer Shirt">
                     <div class="product__info">
-                        <p class="product__name">HTML 5</p>
+                        <p id="pn7" class="product__name">HTML 5</p>
                         <p class="product__prize">$25</p>
                     </div>
                 </a>
             </div> <!-- .product -->
 
             <div class="product">
-                <a href="product.html">
+                <a id="8" href="product.html" onclick="setProductInfo(this.id)">
                     <img class="product__image" src="img/8.jpg" alt="Developer Shirt">
                     <div class="product__info">
-                        <p class="product__name">GitHub</p>
+                        <p id="pn8" class="product__name">GitHub</p>
                         <p class="product__prize">$25</p>
                     </div>
                 </a>
             </div> <!-- .product -->
 
             <div class="product">
-                <a href="product.html">
+                <a id="9" href="product.html" onclick="setProductInfo(this.id)">
                     <img class="product__image" src="img/9.jpg" alt="Developer Shirt">
                     <div class="product__info">
-                        <p class="product__name">Bulma</p>
+                        <p id="pn9" class="product__name">Bulma</p>
                         <p class="product__prize">$25</p>
                     </div>
                 </a>
             </div> <!-- .product -->
 
             <div class="product">
-                <a href="product.html">
+                <a id="10"href="product.html" onclick="setProductInfo(this.id)">
                     <img class="product__image" src="img/10.jpg" alt="Developer Shirt">
                     <div class="product__info">
-                        <p class="product__name">TypeScript</p>
+                        <p id="pn10" class="product__name">TypeScript</p>
                         <p class="product__prize">$25</p>
                     </div>
                 </a>
             </div> <!-- .product -->
 
             <div class="product">
-                <a href="product.html">
+                <a id="11"href="product.html" onclick="setProductInfo(this.id)">
                     <img class="product__image" src="img/11.jpg" alt="Developer Shirt">
                     <div class="product__info">
-                        <p class="product__name">Drupal</p>
+                        <p id="pn11" class="product__name">Drupal</p>
                         <p class="product__prize">$25</p>
                     </div>
                 </a>
             </div> <!-- .product -->
 
             <div class="product">
-                <a href="product.html">
+                <a id="12"href="product.html" onclick="setProductInfo(this.id)">
                     <img class="product__image" src="img/12.jpg" alt="Developer Shirt">
                     <div class="product__info">
-                        <p class="product__name">JavaScript</p>
+                        <p id="pn12" class="product__name">JavaScript</p>
                         <p class="product__prize">$25</p>
                     </div>
                 </a>
             </div> <!-- .product -->
 
             <div class="product">
-                <a href="product.html">
+                <a id="13"href="product.html" onclick="setProductInfo(this.id)">
                     <img class="product__image" src="img/13.jpg" alt="Developer Shirt">
                     <div class="product__info">
-                        <p class="product__name">GraphSQL</p>
+                        <p id="pn13" class="product__name">GraphSQL</p>
                         <p class="product__prize">$25</p>
                     </div>
                 </a>
             </div> <!-- .product -->
 
             <div class="product">
-                <a href="product.html">
+                <a id="14"href="product.html" onclick="setProductInfo(this.id)">
                     <img class="product__image" src="img/14.jpg" alt="Developer Shirt">
                     <div class="product__info">
-                        <p class="product__name">WordPress</p>
+                        <p id="pn14" class="product__name">WordPress</p>
                         <p class="product__prize">$25</p>
                     </div>
                 </a>
