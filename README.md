@@ -1,2 +1,2 @@
 # SimpleWebStoreTemplate
-Web Store template using html and css
+Web Store layout using html and css
