@@ -13,25 +13,47 @@
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="preload" href="css/responsive.css" as="style">
     <link rel="preload" href="css/normalize.css" as="style">
-    
+
+    <script type="text/javascript" src="js/script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/normalize.css">
 </head>
-<body>
+<body onload="fillContent()">
     <header class="header">
-        <a href="">
+        <a href="index.html">
             <img class="header__logo" src="img/logo.png" alt="Logo">
         </a>
     </header>
 
     <nav class="nav">
-        <a class="nav__link nav__link--active" href="" >Store</a>
-        <a class="nav__link nav__link--" href="" >About Us</a>
+        <a class="nav__link" href="index.html" >Store</a>
+        <a class="nav__link" href="about_us.html" >About Us</a>
     </nav>
 
-    <main class="container">
-        <h1>Product</h1>
+    <main id="main" class="container">
+        <h1 id="product-name">Tech</h1>
+
+        <div class="shirt">
+            <img id="product-photo" class="shirt__photo" src="img/3.jpg" alt="Tech Shirt">
+            <div class="shirt__info">
+                <p class="shirt__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos placeat doloremque corrupti debitis consequuntur, tenetur dolorum odio impedit laborum deleniti natus sapiente beatae molestias esse voluptate quibusdam eos. Laboriosam, ab.
+                </p>
+
+                <form action="" class="form">
+                    <select class="form__fields" name="" id="">
+                        <option disabled selected>--Select Size--</option>
+                        <option value="">S</option>
+                        <option value="">M</option>
+                        <option value="">L</option>
+                        <option value="">XL</option>
+                    </select>
+                    <input class="form__fields" type="number" min="1" placeholder="Amount" required>
+                    <input class="form__submit" type="submit" value="Add to cart">
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
