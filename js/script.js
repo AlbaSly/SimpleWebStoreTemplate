@@ -24,5 +24,5 @@ const setTotal = () => {
 }
 
 const showDetailedMessage = () => {
-    alert('ITEM: ' + sessionStorage.getItem('productName') + ' T-SHIRT\nAMOUNT: ' + amount + '\nTOTAL: $' + total);
+    alert('ITEM: ' + sessionStorage.getItem('productName') + ' T-SHIRT\nAMOUNT: ' + (amount == NaN | amount == 0 ? 'Empty' : amount) + '\nTOTAL: $' + total);
 }
